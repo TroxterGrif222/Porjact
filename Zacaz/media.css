@@ -1,0 +1,101 @@
+@media (max-width: 1120px) {
+    #footer .footer_info {
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 1035px) {
+    .nav_info {
+        justify-content: space-around;
+    }
+    
+    .Menu_label {
+        display: block;
+        transition: 0.5s color ease-in;
+        font-size: 30px;
+    }
+
+    .Menu_label:hover {
+        color: greenyellow;
+        cursor: pointer;
+    }
+    
+    .nav_info_gui {
+        position: fixed;
+        top: 0;
+        transform: translateY(-200%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: ghostwhite;
+        display: flex;
+        flex-direction: column;
+        transition: 1s all ease;
+        z-index: 5;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    #Menu_btn:checked~#nav_info_gui {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 945px) {
+    #Zacaz_progress .Zacaz_progress_Title,
+    #Zacaz_don-t_progress .Zacaz_don-t_progress_Title,
+    #Zacaz_get .Zacaz_get_Title {
+        flex-direction: column;
+    }
+    
+    .Zacaz_progress_info,
+    .Zacaz_don-t_progress_info,
+    .Zacaz_get_info {
+        display: grid;
+        justify-content: center;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        'box box2'
+        'box3 box4';
+    }
+}
+
+@media (max-width: 750px) {
+    #footer .footer_info ul {
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 480px) {
+    #Zacaz_progress .Zacaz_progress_Title .Zacaz_progress_Title_left div,
+    #Zacaz_progress .Zacaz_progress_Title .Zacaz_progress_Title_rigth div,
+    
+    #Zacaz_don-t_progress .Zacaz_don-t_progress_Title .Zacaz_don-t_progress_Title_left div,
+    #Zacaz_don-t_progress .Zacaz_don-t_progress_Title .Zacaz_don-t_progress_Title_rigth div,
+    
+    #Zacaz_get .Zacaz_get_Title .Zacaz_get_Title_left div,
+    #Zacaz_get .Zacaz_get_Title .Zacaz_get_Title_rigth div {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+       
+    }
+    
+    .Zacaz_progress_info,
+    .Zacaz_don-t_progress_info,
+    .Zacaz_get_info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #Title_main h1 {
+        font-size: 40px;
+    }
+}
+

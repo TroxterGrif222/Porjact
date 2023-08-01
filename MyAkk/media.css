@@ -1,0 +1,64 @@
+@media (max-width: 1120px) {
+    #footer .footer_info {
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 1035px) {
+    .nav_info {
+        justify-content: space-around;
+    }
+    
+    .Menu_label {
+        display: block;
+        transition: 0.5s color ease-in;
+        font-size: 30px;
+    }
+
+    .Menu_label:hover {
+        color: greenyellow;
+        cursor: pointer;
+    }
+    
+    .nav_info_gui {
+        position: fixed;
+        top: 0;
+        transform: translateY(-200%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        background-color: ghostwhite;
+        display: flex;
+        flex-direction: column;
+        transition: 1s all ease;
+        z-index: 5;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    #Menu_btn:checked~#nav_info_gui {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 750px) {
+    #footer .footer_info ul {
+        flex-direction: column;
+    }   
+}
+
+@media (max-width: 390px) {
+    #Title_main h1 {
+        font-size: 50px;
+    }
+
+    .My_Akk_info>div {
+        flex-direction: column;
+        gap: 30px;
+    }
+}

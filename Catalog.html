@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <link rel="stylesheet" href="./Catalog/Catalog.css">
+    <link rel="icon" href="./Catalog/img/icon.ico">
+    <link rel="stylesheet" href="./Catalog/media.css">
+    <title>Католог</title>
+</head>
+<body>
+    <header id = "header">
+        <nav class = "nav">
+            <div class = "nav_info container">
+                
+                <div class="logo">
+                    <a href="./index.html">
+                        Северяночка
+                    </a>
+                </div>
+
+                <input type="checkbox" id = "Menu_btn">
+                <label for="Menu_btn" class = "Menu_label">
+                    <i class = "fas fa-server"></i>
+                </label>
+
+                <div class="nav_info_gui" id = "nav_info_gui">
+                    <label for="Menu_btn" class = "Menu_label">
+                        <i class = "fas fa-server"></i>
+                    </label>
+                    
+                    
+                    <input type="checkbox" id = "Catalog_btn">
+                    <label for="Catalog_btn" class = "Catalog_label">
+                        <i class = "fas fa-server"></i> Каталог 
+                    </label>
+
+                    <div class="Catalog_gui">
+                        <ul class = "Catalog_gui_left">
+                            <li><a href="#!" class = "menu_link">Молоко, сыр, яйцо</a></li>
+                            <li><a href="#!" class = "menu_link">Хлеб</a></li>
+                            <li><a href="#!" class = "menu_link">Фрукты и овощи</a></li>
+                            <li><a href="#!" class = "menu_link">Замороженные продукты</a></li>
+                            <li><a href="#!" class = "menu_link">Напитки</a></li>
+                            <li><a href="#!" class = "menu_link">Кондитерские изделия</a></li>
+                            <li><a href="#!" class = "menu_link">Чай, кофе</a></li>
+                        </ul>
+
+                        <label for="Catalog_btn" class = "Catalog_label">
+                            <i class = "fas fa-server"></i> Каталог 
+                        </label>
+
+                        <ul class = "Catalog_gui_right">
+                            <li><a href="#!" class = "menu_link">Бакалея</a></li>
+                            <li><a href="#!" class = "menu_link">Здоровое питание</a></li>
+                            <li><a href="#!" class = "menu_link">Зоотовары</a></li>
+                            <li><a href="#!" class = "menu_link">Непродовольственные товары</a></li>
+                            <li><a href="#!" class = "menu_link">Детское питание</a></li>
+                            <li><a href="#!" class = "menu_link">Мясо, птица, колбаса</a></li>
+                        </ul>
+                    </div>
+
+
+
+                    <input type="search" placeholder = "Найти товар" id = "Seact_nav">
+
+                    <menu class = "menu">
+                        <li><a href="./Izbrаnoy.html" class = "menu_link"><i class="fas fa-heart"></i> Изброное </a></li>
+                        <li><a href="./Zacaz.html" class = "menu_link"><i class = "fas fa-box"></i> Заказы </a></li>
+                        <li><a href="./Karzina.html" class = "menu_link"><i class="fas fa-shopping-basket"></i> Карзина </a></li>
+                    </menu>
+
+                    <div class="User_Akk">
+                        <input type="checkbox" id = "Login_btn">
+                        <label class = "Login_label menu_link" for="Login_btn">
+                            <i class = "fas fa-user"></i> User 
+                        </label>
+
+                        <form id = "form" action="post">
+                            <div class="form_info">
+                                <label class = "Login_label menu_link" for="Login_btn">
+                                    <i class="fas fa-times-square"></i>
+                                </label>
+                                <h3>
+                                    Вход
+                                </h3>
+                                <input type="tel" placeholder = "Телефон" id = "Login_in_input">
+                                <input type="submit" value = "Вход" id = "Login_in_btn">
+                                <div class="form_info_help">
+                                    <a href="#!">
+                                        Регистрация
+                                    </a>
+                                    <a href="#!">
+                                        Забыли пароль?
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <input type="checkbox" id = "User_btn">
+                        <label for="User_btn" class = "User_label">
+                            <i class="fas fa-arrow-to-bottom"></i>
+                        </label>
+
+
+                        <div class="User_gui">
+                            <label for="User_btn" class = "User_label">
+                                <i class="fas fa-arrow-to-top"></i>
+                            </label>
+                            <a href="./MyAkk.html" class = "menu_link">
+                                Мой Профиль
+                            </a>
+                            <a href="./СhangeAkk.html" class = "menu_link">
+                                Смена аккаунта
+                            </a>
+                            <a href="./MethodPay.html" class = "menu_link">
+                                Способ оплаты
+                            </a>
+                            <a href="./Setting.html" class = "menu_link">
+                                Настройки
+                            </a>
+                            <a href="#!" class = "menu_link">
+                                Выход 
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main id = "main">
+        <div class="container">
+            <section id = "Title_main">
+                <div class = "Title_main_place">
+                    <a class = "menu_link" href="./index.html">Главное</a>
+                    <i class = "fas fa-arrow-right"></i>
+                    <a class = "menu_link active" href="./Catalog.html">Каталог</a>
+                </div>
+                <h1>
+                    Каталог 
+                </h1>
+            </section>
+            <section id = "Type_Tovar">
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id">
+                    <img src="./Catalog/img/main/img.png" alt="">
+                    <h3>
+                        Молоко, сыр, яйцо
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id2">
+                    <img src="./Catalog/img/main/img2.png" alt="">
+                    <h3>
+                        Хлеб
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id3">
+                    <img src="./Catalog/img/main/img3.png" alt="">
+                    <h3>
+                        Фрукты и овощи
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id4">
+                    <img src="./Catalog/img/main/img4.png" alt="">
+                    <h3>
+                        Замороженные продукты
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id5">
+                    <img src="./Catalog/img/main/img5.png" alt="">
+                    <h3>
+                        Напитки
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id6">
+                    <img src="./Catalog/img/main/img6.png" alt="">
+                    <h3>
+                        Кондитерские изделия
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id7">
+                    <img src="./Catalog/img/main/img7.png" alt="">
+                    <h3>
+                        Чай, кофе
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id8" >
+                    <img src="./Catalog/img/main/img8.png" alt="">
+                    <h3>
+                        Бакалея
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id9">
+                    <img src="./Catalog/img/main/img9.png" alt="">
+                    <h3>
+                        Здоровое питание
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id10">
+                    <img src="./Catalog/img/main/img10.png" alt="">
+                    <h3>
+                        Зоотовары
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id11">
+                    <img src="./Catalog/img/main/img11.png" alt="">
+                    <h3>
+                        Детское питание
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id12">
+                    <img src="./Catalog/img/main/img12.png" alt="">
+                    <h3>
+                        Мясо, птица, колбаса
+                    </h3>
+                </div>
+                <div class="Type_Tovar_item" id = "Type_Tovar_item_id13">
+                    <img src="./Catalog/img/main/img13.png" alt="">
+                    <h3>
+                        Непродовольственные товары
+                    </h3>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id = "footer">
+        <div class="footer_info">
+            <div class="logo">
+                <a href="#!">
+                    Северяночка
+                </a>
+            </div>
+            <ul>
+                <li><a href="./About.html" class = "menu_link">О компании</a></li>
+                <li><a href="./Contact.html" class = "menu_link">Контакты</a></li>
+                <li><a href="./Vakanss.html" class = "menu_link">Вакансии</a></li>
+            </ul>
+            <ul>
+                <li><a target = "_blank" href="https://www.instagram.com/" class = "menu_link"><i class = "fab fa-instagram"></i></a></li>
+                <li><a target = "_blank" href="https://www.vk.com" class = "menu_link"><i class = "fab fa-vk"></i></a></li>
+                <li><a target = "_blank" href="https://www.facebook.com" class = "menu_link"><i class = "fab fa-facebook"></i></a></li>
+                <li><a target = "_blank" href="https://www.telegram.org" class = "menu_link"><i class = "fab fa-telegram"></i></a></li>
+            </ul>
+            <a href="#!" class = "menu_link">
+                <i class = "fas fa-phone"></i> 8 800 777 33 33
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

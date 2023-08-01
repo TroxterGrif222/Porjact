@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+:root {
+    --BgHtml: #FBF8EC;
+    --FontFamely: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --TextColor: #333;
+    --TextActive: aliceblue;
+    --ActiveColor: rgb(114, 233, 114);
+
+    --NavColor: white;
+    --ButtonColor: rgb(114, 233, 114);
+    --BgMain: #FBF8EC;
+    --BgItems: white;
+    --OptyonColor: rgba(252, 213, 186, 0.80);
+}
+
+/* :root {
+    --ActiveColor: orangered;
+} */
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+}
+
+body {
+    background-color: var(--BgHtml);
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+
+.nav {
+    width: 100%;
+    height: auto;
+    background-color: var(--NavColor);
+
+    box-shadow: 3px 10px 21px -6px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 3px 10px 21px -6px rgba(0,0,0,0.46);
+    -moz-box-shadow: 3px 10px 21px -6px rgba(0,0,0,0.46);
+
+    position: fixed;
+    z-index: 9999;
+}
+
+.nav_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    min-height: 70px;
+    height: auto;
+}
+
+.logo {
+    transition: 0.5s transform ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+.logo a {
+    font-family: var(--FontFamely);
+    font-size: 30px;
+    color: var(--TextColor);
+}
+
+.nav_info_gui {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#Catalog_btn,
+#User_btn,
+#Menu_btn,
+.Menu_label,
+#Login_btn {
+    display: none;
+}
+
+.Catalog_label {
+    background-color: var(--ButtonColor);
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: var(--FontFamely);
+    color: var(--TextActive);
+    transition: 0.5s color ease-in;
+}
+
+.Catalog_label:hover {
+    cursor: pointer;
+    color: var(--TextColor);
+}
+
+#Seact_nav {
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    padding-left: 15px;
+    border: solid 2px var(--ButtonColor);
+    color: var(--TextColor);
+    font-family: var(--FontFamely);
+    outline:none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu_link {
+    transition: 0.5s color ease-in;
+    font-family: var(--FontFamely);
+    color: var(--TextColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+}
+
+.menu_link:hover {
+    color: var(--ActiveColor);
+    cursor: pointer;
+}
+
+.nav_info .menu_link:not(.User_gui a)::after,
+footer .menu_link:not(.User_gui a)::after {
+    content: '';
+    width: 15%;
+    height: 3px;
+    position: absolute; 
+    left: 0;
+    bottom: -5px;
+    background-color: var(--ActiveColor);
+    opacity: 0.5;
+    transition: 0.5s opacity ease, 0.5s width ease;
+}
+
+.nav_info .menu_link:hover:not(.User_gui a)::after,
+footer .menu_link:hover:not(.User_gui a)::after {
+    opacity: 1;
+    width: 100%;
+}
+
+.User_Akk {
+    max-width: 100px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+
+
+#form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--OptyonColor);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(-200%);
+    transition: 0.5s all ease;
+    z-index: 6;
+}
+
+#Login_btn:checked~#form {
+    transform: translateY(0);
+}
+
+.form_info {
+    background-color: var(--BgMain);
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border-radius: 10px;
+    position: relative;
+    gap: 15px;
+}
+
+.form_info .Login_label {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+
+
+.form_info h3 {
+    font-family: var(--FontFamely);
+    color: var(--TextColor);
+    font-weight: 600;
+    font-size: 30px;
+}
+
+#Login_in_input,
+#Login_in_btn {
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 0;
+    color: var(--TextColor);
+    font-family: var(--FontFamely);
+}
+
+#Login_in_input {
+    outline: none;
+    border: solid 1px var(--ButtonColor);
+    padding-left: 15px;
+}
+
+#Login_in_btn {
+    background-color: var(--ButtonColor);
+    cursor: pointer;
+}
+
+.form_info_help {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form_info_help a {
+    color: var(--ButtonColor);
+    border: solid 1px var(--ButtonColor);
+    width: auto;
+    height: auto;
+    font-size: 15px;
+    padding: 5px;
+}
+
+
+
+
+.User_label {
+    color: var(--TextColor);
+    transition: 0.5s all ease;
+}
+
+#User_btn:checked~.User_label {
+    transform: rotate(180deg);
+}
+
+.User_label:hover {
+    cursor: pointer;
+    color: var(--ActiveColor);
+}
+
+#main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.User_gui {
+    position: fixed;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--OptyonColor);
+    transform: translateY(-200%);
+    z-index: 6;
+    transition: 0.5s all ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 10px 0 0 10px;
+    border-left: var(--ButtonColor) solid 2px;
+}
+
+#User_btn:checked~.User_gui {
+    transform: translateY(0);
+}
+
+.User_gui>.menu_link {
+    background-color: orangered;
+    max-width: 200px;
+    width: 100%;
+    height: 30px;
+    transition: 0.5s all ease;
+    border-radius: 10px;
+    border: solid 2px orangered;
+}
+
+.User_gui>.menu_link:hover {
+    transform: scale(1.02) translateX(-5px);
+    border-color: var(--ButtonColor);
+    border-radius: 0 30px 0 30px;
+}
+
+
+#main .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#Title_main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+}
+
+.Title_main_place {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.Title_main_place .menu_link {
+    font-family: var(--FontFamely);
+    color: var(--TextColor);
+    font-weight: 300;
+    font-size: 15px
+}
+
+.Title_main_place .menu_link.active {
+    color: var(--ActiveColor);
+}
+
+.Title_main_place i {
+    font-size: 12px
+}
+
+#Title_main h1 {
+    width: auto;
+    height: auto;
+    font-family: var(--FontFamely);
+    color: var(--TextColor);
+    font-weight: 600;
+    font-size: 100px;
+}
+
+
+#Vakanss {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.Vakanss_item {
+    background-color: var(--ButtonColor);
+    padding: 15px;
+    font-family: var(--FontFamely);
+    color: var(--TextColor);
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 30px;
+    transition: 0.5s all ease;
+}
+
+.Vakanss_item:hover {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.41);
+}
+
+.Vakanss_item h2 {
+    font-weight: 600;
+}
+
+.Vakanss_item h4,
+.Vakanss_item p {
+    max-width: 200px;
+    width: 100%;
+
+    line-height: 25px;
+}
+
+.Vakanss_item a {
+    color: orangered;
+}
+
+
+
+footer {
+    background-image: url(./img/footer/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    padding: 15px 0;
+}
+
+#footer .footer_info {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer_info ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}

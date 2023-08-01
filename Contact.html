@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <link rel="stylesheet" href="./Contact/Contact.css">
+    <link rel="icon" href="./Contact/img/icon.ico">
+    <link rel="stylesheet" href="./Contact/media.css">
+    <title>Контакты</title>
+</head>
+<body>
+    <header id = "header">
+        <nav class = "nav">
+            <div class = "nav_info container">
+                
+                <div class="logo">
+                    <a href="./index.html">
+                        Северяночка
+                    </a>
+                </div>
+
+                <input type="checkbox" id = "Menu_btn">
+                <label for="Menu_btn" class = "Menu_label">
+                    <i class = "fas fa-server"></i>
+                </label>
+
+                <div class="nav_info_gui" id = "nav_info_gui">
+                    <label for="Menu_btn" class = "Menu_label">
+                        <i class = "fas fa-server"></i>
+                    </label>
+                    
+                    <a href="./Catalog.html" class = "Catalog_label">
+                        <i class = "fas fa-server"></i> Каталог
+                    </a>
+
+                    
+
+                    <input type="search" placeholder = "Найти товар" id = "Seact_nav">
+
+                    <menu class = "menu">
+                        <li><a href="./Izbrаnoy.html" class = "menu_link"><i class="fas fa-heart"></i> Изброное </a></li>
+                        <li><a href="./Zacaz.html" class = "menu_link"><i class = "fas fa-box"></i> Заказы </a></li>
+                        <li><a href="./Karzina.html" class = "menu_link"><i class="fas fa-shopping-basket"></i> Карзина </a></li>
+                    </menu>
+
+                    <div class="User_Akk">
+                        <input type="checkbox" id = "Login_btn">
+                        <label class = "Login_label menu_link" for="Login_btn">
+                            <i class = "fas fa-user"></i> User 
+                        </label>
+
+                        <form id = "form" action="post">
+                            <div class="form_info">
+                                <label class = "Login_label menu_link" for="Login_btn">
+                                    <i class="fas fa-times-square"></i>
+                                </label>
+                                <h3>
+                                    Вход
+                                </h3>
+                                <input type="tel" placeholder = "Телефон" id = "Login_in_input">
+                                <input type="submit" value = "Вход" id = "Login_in_btn">
+                                <div class="form_info_help">
+                                    <a href="#!">
+                                        Регистрация
+                                    </a>
+                                    <a href="#!">
+                                        Забыли пароль?
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <input type="checkbox" id = "User_btn">
+                        <label for="User_btn" class = "User_label">
+                            <i class="fas fa-arrow-to-bottom"></i>
+                        </label>
+
+                        <div class="User_gui">
+                            <label for="User_btn" class = "User_label">
+                                <i class="fas fa-arrow-to-top"></i>
+                            </label>
+                            <a href="./MyAkk.html" class = "menu_link">
+                                Мой Профиль
+                            </a>
+                            <a href="./СhangeAkk.html" class = "menu_link">
+                                Смена аккаунта
+                            </a>
+                            <a href="./MethodPay.html" class = "menu_link">
+                                Способ оплаты
+                            </a>
+                            <a href="./Setting.html" class = "menu_link">
+                                Настройки
+                            </a>
+                            <a href="#!" class = "menu_link">
+                                Выход 
+                            </a>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+            
+            
+            </div>
+        </nav>
+    </header>
+
+    <main id = "main">
+        <div class="container">
+            <section id = "Title_main">
+                <div class = "Title_main_place">
+                    <a class = "menu_link" href="./index.html">Главное</a>
+                    <i class = "fas fa-arrow-right"></i>
+                    <a class = "menu_link active" href="./Contact.html">Контакты</a>
+                </div>
+                <h1>
+                    Контакты 
+                </h1>
+            </section>
+            <section id = "Support">
+                <div class="Support_item">
+                    <h3>
+                        <i class = "fas fa-home"></i>
+                        Бухгалтерия, склад
+                    </h3>
+                    <a href="#!">
+                        +7 82140 92619
+                    </a>
+                </div>
+                <div class="Support_item">
+                    <h3>
+                        <i class = "fas fa-percent"></i>
+                        Вопросы по системе лояльности
+                    </h3>
+                    <a href="#!">
+                        +7 908 716 33 97
+                    </a>
+                </div>
+            </section>
+
+            <section id = "Our_shop">
+                <h2 class="Our_shop_Title">
+                    Наши магазины
+                </h2>
+                <div class="Our_shop_nav">
+                    
+                    <menu class = "Our_shop_nav_menu">
+                        <li><button class = "Our_shop_nav_menu_link active">п.Щельяюр</button></li>
+                        <li><button class = "Our_shop_nav_menu_link">д.Вертеп</button></li>
+                        <li><button class = "Our_shop_nav_menu_link">с.Краснобор</button></li>
+                        <li><button class = "Our_shop_nav_menu_link">д.Диюр</button></li>
+                    </menu>
+
+                    <div class="Our_shop_nav_itmes">
+                        <div class="Our_shop_nav_itme">
+                            <h3>
+                                Восход
+                            </h3>
+                            <p>
+                                <i class = "fas fa-home"></i>
+                                ул. Дорожная 10
+                            </p>
+                            <a href="#!">
+                                <i class = "fas fa-call"></i>
+                                +7 904 271 35 90
+                            </a>
+                        </div>
+                        <div class="Our_shop_nav_itme">
+                            <h3>
+                                Парсу
+                            </h3>
+                            <p>
+                                <i class = "fas fa-home"></i>
+                                ул. Советская 87
+                            </p>
+                            <a href="#!">
+                                <i class = "fas fa-call"></i>
+                                +7 82140 91330
+                            </a>
+                        </div>
+                        <div class="Our_shop_nav_itme">
+                            <h3>
+                                Рябинушка
+                            </h3>
+                            <p>
+                                <i class = "fas fa-home"></i>
+                                ул. Заводская 16
+                            </p>
+                            <a href="#!">
+                                <i class = "fas fa-call"></i>
+                                +7 82140 91101
+                            </a>
+                        </div>
+                        <div class="Our_shop_nav_itme">
+                            <h3>
+                                Пелысь
+                            </h3>
+                            <p>
+                                <i class = "fas fa-home"></i>
+                                ул. Рабочая 1
+                            </p>
+                            <a href="#!">
+                                <i class = "fas fa-call"></i>
+                                +7 82140 91300
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="Our_shop_map">
+                    <iframe class = "Our_shop_map_item active" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26652.468219681825!2d53.372323233378566!3d65.3226717161531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4472340bbf53f20d%3A0x6aaf90d406ef7886!2z0KnQtdC70YzRj9GO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGP!5e0!3m2!1sru!2s!4v1689352066437!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                    <!-- <iframe class = "Our_shop_map_item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13339.051486239861!2d53.17444029986661!3d65.29734872897914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447249e2718cd461%3A0x25c0f625da4e30ed!2z0JLQtdGA0YLQtdC_LCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1689352134820!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <!-- <iframe class = "Our_shop_map_item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13341.63291819816!2d53.2693024498242!3d65.2922480322355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235dd2ca590b3%3A0xc633232da326cfaf!2z0JrRgNCw0YHQvdC-0LHQvtGALCDQoNC10YHQvy4g0JrQvtC80LgsINCg0L7RgdGB0LjRjywgMTY5NDcz!5e0!3m2!1sru!2s!4v1689352167580!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                    <!-- <iframe class = "Our_shop_map_item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13350.044498576164!2d53.3380512996857!3d65.27562599284674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x447235aa69816fb7%3A0x7202220934f2d943!2z0JTQuNGO0YAsINCg0LXRgdC_LiDQmtC-0LzQuCwg0KDQvtGB0YHQuNGPLCAxNjk0NzE!5e0!3m2!1sru!2s!4v1689352221229!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id = "footer">
+        <div class="footer_info">
+            <div class="logo">
+                <a href="#!">
+                    Северяночка
+                </a>
+            </div>
+            <ul>
+                <li><a href="./About.html" class = "menu_link">О компании</a></li>
+                <li><a href="./Contact.html" class = "menu_link">Контакты</a></li>
+                <li><a href="./Vakanss.html" class = "menu_link">Вакансии</a></li>
+            </ul>
+            <ul>
+                <li><a target = "_blank" href="https://www.instagram.com/" class = "menu_link"><i class = "fab fa-instagram"></i></a></li>
+                <li><a target = "_blank" href="https://www.vk.com" class = "menu_link"><i class = "fab fa-vk"></i></a></li>
+                <li><a target = "_blank" href="https://www.facebook.com" class = "menu_link"><i class = "fab fa-facebook"></i></a></li>
+                <li><a target = "_blank" href="https://www.telegram.org" class = "menu_link"><i class = "fab fa-telegram"></i></a></li>
+            </ul>
+            <a href="#!" class = "menu_link">
+                <i class = "fas fa-phone"></i> 8 800 777 33 33
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

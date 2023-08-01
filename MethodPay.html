@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/all.min.css">
+    <link rel="stylesheet" href="./MethodPay/MethodPay.css">
+    <link rel="icon" href="./MethodPay/img/icon.ico">
+    <link rel="stylesheet" href="./MethodPay/media.css">
+    <title>Способ оплаты</title>
+</head>
+<body>
+    <header id = "header">
+        <nav class = "nav">
+            <div class = "nav_info container">
+                
+                <div class="logo">
+                    <a href="./index.html">
+                        Северяночка
+                    </a>
+                </div>
+
+                <input type="checkbox" id = "Menu_btn">
+                <label for="Menu_btn" class = "Menu_label">
+                    <i class = "fas fa-server"></i>
+                </label>
+
+                <div class="nav_info_gui" id = "nav_info_gui">
+                    <label for="Menu_btn" class = "Menu_label">
+                        <i class = "fas fa-server"></i>
+                    </label>
+                    
+                    <a href="./Catalog.html" class = "Catalog_label">
+                        <i class = "fas fa-server"></i> Каталог
+                    </a>
+
+                    
+
+                    <input type="search" placeholder = "Найти товар" id = "Seact_nav">
+
+                    <menu class = "menu">
+                        <li><a href="./Izbrаnoy.html" class = "menu_link"><i class="fas fa-heart"></i> Изброное </a></li>
+                        <li><a href="./Zacaz.html" class = "menu_link"><i class = "fas fa-box"></i> Заказы </a></li>
+                        <li><a href="./Karzina.html" class = "menu_link"><i class="fas fa-shopping-basket"></i> Карзина </a></li>
+                    </menu>
+
+                    <div class="User_Akk">
+                        <input type="checkbox" id = "Login_btn">
+                        <label class = "Login_label menu_link" for="Login_btn">
+                            <i class = "fas fa-user"></i> User 
+                        </label>
+
+                        <form id = "form" action="post">
+                            <div class="form_info">
+                                <label class = "Login_label menu_link" for="Login_btn">
+                                    <i class="fas fa-times-square"></i>
+                                </label>
+                                <h3>
+                                    Вход
+                                </h3>
+                                <input type="tel" placeholder = "Телефон" id = "Login_in_input">
+                                <input type="submit" value = "Вход" id = "Login_in_btn">
+                                <div class="form_info_help">
+                                    <a href="#!">
+                                        Регистрация
+                                    </a>
+                                    <a href="#!">
+                                        Забыли пароль?
+                                    </a>
+                                </div>
+                            </div>
+                        </form>
+
+                        <input type="checkbox" id = "User_btn">
+                        <label for="User_btn" class = "User_label">
+                            <i class="fas fa-arrow-to-bottom"></i>
+                        </label>
+
+                        <div class="User_gui">
+                            <label for="User_btn" class = "User_label">
+                                <i class="fas fa-arrow-to-top"></i>
+                            </label>
+                            <a href="./MyAkk.html" class = "menu_link">
+                                Мой Профиль
+                            </a>
+                            <a href="./СhangeAkk.html" class = "menu_link">
+                                Смена аккаунта
+                            </a>
+                            <a href="./MethodPay.html" class = "menu_link">
+                                Способ оплаты
+                            </a>
+                            <a href="./Setting.html" class = "menu_link">
+                                Настройки
+                            </a>
+                            <a href="#!" class = "menu_link">
+                                Выход 
+                            </a>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+            
+            
+            </div>
+        </nav>
+    </header>
+
+    <main id = "main">
+        <div class="container">
+            <section id = "Title_main">
+                <div class = "Title_main_place">
+                    <a class = "menu_link" href="./index.html">Главное</a>
+                    <i class = "fas fa-arrow-right"></i>
+                    <a class = "menu_link active" href="./MethodPay.html">Способ оплаты</a>
+                </div>
+                <h1>
+                    Способ оплаты
+                </h1>
+            </section>
+            <section id = "MethodPay">
+                <form id = "MethodPay_form" method = "post">
+                    <button type="submit">
+                        <img src="./MethodPay/img/main/PayImg.png" alt="">
+                        (Способ оплаты)
+                    </button>
+                    
+                    <button type="submit">
+                        <img src="./MethodPay/img/main/PayImg.png" alt="">
+                        (Способ оплаты 2)
+                    </button>
+                    
+                    <button type="submit">
+                        <img src="./MethodPay/img/main/PayImg.png" alt="">
+                        (Способ оплаты 3)
+                    </button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer id = "footer">
+        <div class="footer_info">
+            <div class="logo">
+                <a href="#!">
+                    Северяночка
+                </a>
+            </div>
+            <ul>
+                <li><a href="./About.html" class = "menu_link">О компании</a></li>
+                <li><a href="./Contact.html" class = "menu_link">Контакты</a></li>
+                <li><a href="./Vakanss.html" class = "menu_link">Вакансии</a></li>
+            </ul>
+            <ul>
+                <li><a target = "_blank" href="https://www.instagram.com/" class = "menu_link"><i class = "fab fa-instagram"></i></a></li>
+                <li><a target = "_blank" href="https://www.vk.com" class = "menu_link"><i class = "fab fa-vk"></i></a></li>
+                <li><a target = "_blank" href="https://www.facebook.com" class = "menu_link"><i class = "fab fa-facebook"></i></a></li>
+                <li><a target = "_blank" href="https://www.telegram.org" class = "menu_link"><i class = "fab fa-telegram"></i></a></li>
+            </ul>
+            <a href="#!" class = "menu_link">
+                <i class = "fas fa-phone"></i> 8 800 777 33 33
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
